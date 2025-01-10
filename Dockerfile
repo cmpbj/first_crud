@@ -11,7 +11,7 @@ COPY . /src
 WORKDIR /src
 
 # Install all dependencies defined in the pyproject.toml
-RUN poetry install --no-root
+RUN poetry install
 
 # Indicates that the application will run on port 8501
 EXPOSE 8501
